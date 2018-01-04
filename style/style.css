@@ -1,5 +1,5 @@
 body {
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
 }
 
 li {
@@ -23,6 +23,8 @@ nav.bottom {
   font-size: 13px;
   background: #f2f2f2;
   opacity: 0.75
+  font-family: arial, sans-serif;
+  font-size: small;
 }
 
 .left {
@@ -53,13 +55,15 @@ nav.bottom {
 }
 
 input[name=search-bar] {
-  display: block;
+  display: inline-block;
   margin: 20px auto;
   width: 528px;
   height: 44px;
   font-size: 16px;
   border: none;
-  -webkit-box-shadow: 0 0 0px 30px #fff inset;;
+  -webkit-box-shadow: 0 0 0px 30px #fff inset;
+  position: relative;
+  bottom: 20px;
 }
 
 input[name=search-bar]::-webkit-search-cancel-button {
@@ -73,8 +77,16 @@ input[name=search-bar]:focus {
 
 .search-box {
   box-shadow: 0.4px 1.3px 5px #aaa;
-  width: 575px;
+  width: 584px;
   margin: 0 auto;
+  max-height: 44px;
+  background-image: : url("./voice-search.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 45px;
+  position: relative;
+  top: 24px;
+  left: 7px;
 }
 
 .search-box:hover {
@@ -101,8 +113,8 @@ input[type=submit]{
   height: 36px;
   line-height: 27px;
   min-width: 54px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 17px;
+  padding-right: 17px;
   text-align: center;
 }
 
@@ -116,4 +128,12 @@ input[type=submit]:hover {
   border: 1px solid #c6c6c6;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   color: #222
+}
+
+.voice-search {
+  position: relative;
+  height: 20px;
+  vertical-align: middle;
+  bottom: 21px;
+  left: -2px;
 }
