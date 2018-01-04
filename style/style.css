@@ -35,6 +35,29 @@ nav.bottom {
 .right, .bottom-right {
   float: right;
   position: relative;
+  margin-right: 5px;
+}
+
+.sign-in {
+  position: relative;
+  bottom: 3px;
+  left: 10px;
+  width: 69.34px;
+  padding: 7.5px 11px;
+  font-weight: bold;
+  border-radius: 2px;
+  color: white;
+  background-color: #4684ee;
+  opacity: 1;
+  margin-left: 3px;
+  margin-right: 35px;
+  padding-left: 13px;
+  padding-right: 13px;
+  height: 30px;
+}
+
+a.sign-in-link:hover {
+  text-decoration: none;
 }
 
 .bottom-right {
@@ -100,6 +123,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.options {
+  height: 16px;
 }
 
 input[type=submit]{
